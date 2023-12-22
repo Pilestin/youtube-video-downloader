@@ -34,6 +34,10 @@ To run this project locally, follow these steps:
 
 ## Usage
 
+If you don't want to use streamlit, you can use the script/playlist_downloader.py file to run the application.
+
+``` python script/playlist_downloader.py  ```
+
 Once the application is running, access it via your web browser using the provided local URL (usually something like http://localhost:8501).
 
 İf you want to use another device, you can use the local URL like 
