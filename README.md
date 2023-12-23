@@ -16,6 +16,8 @@ This page allows accessing and downloading videos from a localhost application u
 
 ## Installation
 
+ <b> WARNING :  In Pytube, there are different clients for video downloading, and some of them do not work for age-restricted videos. My suggestion is to change the "client" information in the 'innertube.py' file of Pytube in the 'init' method of the 'Innertube' class to client='ANDROID_CREATOR'. </b>
+
 To run this project locally, follow these steps:
 1. Clone the Repository 
     
