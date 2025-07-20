@@ -39,7 +39,7 @@ This is a **Streamlit-based application** that allows users to download YouTube 
 - `yt-dlp` for downloading videos
 - `streamlit` for the user interface
 
-## Application Features
+<!-- ## Application Features
 
 ### Video Downloading
 - Download videos in MP4 format.
@@ -60,7 +60,7 @@ This is a **Streamlit-based application** that allows users to download YouTube 
 
 ### File Management
 - Automatically saves files to the `Downloads` folder.
-- Displays file size for downloaded files.
+- Displays file size for downloaded files. -->
 
 ## FFmpeg Installation (Required for MP3 Conversion)
 - **Windows:**
