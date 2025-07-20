@@ -1,48 +1,87 @@
-# youtube-video-downloader 
+# YouTube Video Downloader 🎵
 
+This is a **Streamlit-based application** that allows users to download YouTube videos and playlists in various formats and qualities.
 
-This project is a Streamlit-based application that facilitates downloading YouTube videos. It encompasses different functionalities on separate pages.
-
-### 🎵 Home Page
-
-On this page, users can input individual YouTube video URLs to download videos.
-
-### 🎶 Playlist Downloader Page
-
-This page is designed for downloading YouTube playlists. Users input the playlist URL, select a download range, and initiate the download process.
-
-### 🔁 Downloader for Other Devices
-This page allows accessing and downloading videos from a localhost application using another device. Users input the video URL and then download the file by clicking the download button.
+## Features
+- **Single Video Downloader:** Download individual YouTube videos.
+- **Playlist Downloader:** Download entire YouTube playlists.
+- **Format Options:** Download videos in MP4 format or extract audio as MP3.
+- **Quality Selection:** Choose video quality (e.g., 720p, 480p, etc.).
+- **User-Friendly Interface:** Simple and intuitive UI built with Streamlit.
 
 ## Installation
 
- <b> WARNING :  In Pytube, there are different clients for video downloading, and some of them do not work for age-restricted videos. My suggestion is to change the "client" information in the 'innertube.py' file of Pytube in the 'init' method of the 'Innertube' class to client='ANDROID_CREATOR'. </b>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Pilestin/youtube-video-downloader.git
+   cd youtube-video-downloader
+   ```
 
-To run this project locally, follow these steps:
-1. Clone the Repository 
-    
-   ``` git clone https://github.com/Pilestin/youtube-video-downloader.git ```
-2. Change the working directory
-   
-   ``` cd youtube-video-downloader ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Install the required packages
-
-   ``` pip install -r requirements.txt ```
-
-4. run app
-   
-    ``` streamlit run 🎵_Home.py ```
+3. Run the application:
+   ```bash
+   streamlit run Home.py
+   ```
 
 ## Usage
 
-If you don't want to use streamlit, you can use the script/playlist_downloader.py file to run the application.
+1. Open the application in your browser.
+2. Choose between **Single Video Downloader** or **Playlist Downloader**.
+3. Enter the YouTube URL(s) and select the desired format and quality.
+4. Click the download button to start downloading.
 
-``` python script/playlist_downloader.py  ```
+## Requirements
+- Python 3.7 or higher
+- `yt-dlp` for downloading videos
+- `streamlit` for the user interface
 
-Once the application is running, access it via your web browser using the provided local URL (usually something like http://localhost:8501).
+## Application Features
 
-İf you want to use another device, you can use the local URL like 
-Network URL: http://192.168.0.105:8501
+### Video Downloading
+- Download videos in MP4 format.
+- Choose from multiple quality options (e.g., 720p, 480p, 360p).
+- Preview video details such as title, duration, and thumbnail.
+- Track download progress with a progress indicator.
 
-Your downloaded videos will be saved in the project folder in ../Downloads
+### Audio Downloading
+- Extract audio from videos in MP3 format.
+- High-quality audio output (192 kbps).
+- Requires FFmpeg for audio conversion.
+
+### Advanced Features
+- Reliable downloading powered by `yt-dlp`.
+- Handles errors gracefully and provides detailed error messages.
+- Automatically generates safe filenames for downloaded files.
+- Supports batch downloading for multiple URLs.
+
+### File Management
+- Automatically saves files to the `Downloads` folder.
+- Displays file size for downloaded files.
+
+## FFmpeg Installation (Required for MP3 Conversion)
+- **Windows:**
+  ```bash
+  choco install ffmpeg
+  ```
+- **Linux:**
+  ```bash
+  sudo apt install ffmpeg
+  ```
+- **macOS:**
+  ```bash
+  brew install ffmpeg
+  ```
+
+## Screenshots
+### Home Page
+![Home Page](img/Screenshot_1.png)
+
+### Single Video Downloader
+![Single Video Downloader](img/Screenshot_2.png)
+
+### Playlist Downloader
+![Playlist Downloader](img/Screenshot_3.png)
